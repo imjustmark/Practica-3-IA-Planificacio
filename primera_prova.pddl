@@ -39,8 +39,7 @@
         (connecta v14 Dubrovnik Paris)
         (connecta v15 Dubrovnik Barcelona)
 
-        (ara-a Madrid)
-
+        
         (= (num_ciutats_visitades) 0)
     )
 

@@ -21,12 +21,10 @@
 
 (:action ves-a
     :parameters (?c - ciutat ?c2 - ciutat ?h - hotel)
-    :precondition (and (ara-a ?c) 
+    :precondition (and  (imply (exists (?c1 - ciutat) (ara-a ?c1)) (ara-a ?c))
                         (not (visitada ?c2))
                         (assignat ?c2 ?h)
                         (exists (?v - vol) (connecta ?v ?c ?c2)))
-    :effect (and (visitada ?c2) (ara-a ?c2) (not (ara-a ?c)) (se-aloja-en ?h) (increase (num_ciutats_visitades) 1))
+    :effect (and (visitada ?c2) (visitada ?c) (ara-a ?c2) (not (ara-a ?c)) (se-aloja-en ?h) (increase (num_ciutats_visitades) 1))
 )
-
-
 )
