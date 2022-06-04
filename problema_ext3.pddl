@@ -86,6 +86,8 @@
 
     (:goal (and(>= (num_ciutats_visitades) 3)
                (>= (num_dies_totals) (min_numero_dies))
+               (<= (preu_total) (preu_maxim))
+               (>= (preu_total) (preu_minim))
     )
     )
 
