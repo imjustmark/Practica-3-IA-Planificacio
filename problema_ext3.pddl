@@ -80,7 +80,7 @@
         (= (max_dies_ciutat) 4)
 
         (= (preu_maxim) 4000)
-        (= (preu_minim) 500)
+        (= (preu_minim) 200)
         (= (preu_total) 0)
     )
 
