@@ -1,6 +1,6 @@
 
-(define (problem viatges1) 
-    (:domain dominiViatges1)
+(define (problem viatges2) 
+    (:domain dominiViatges2)
     (:objects Barcelona Londres Amsterdam Paris Madrid Dubrovnik - ciutat
             B1 B2 B3 L1 L2 A1 P1 P2 P3 P4 M1 M2 M3 D1 D2 D3 - hotel
             v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12 v13 v14 v15 v16 - vol

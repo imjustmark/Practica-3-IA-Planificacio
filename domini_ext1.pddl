@@ -43,11 +43,4 @@
             
     )
 
-    (:action decrementa_num_ciutat
-        :parameters(?c - ciutat)
-        :precondition (and (exists(?c1 - ciutat) (visitada ?c1)) (visitada ?c)
-                        (> (dies ?c) (min_dies_ciutat)))
-        :effect (and (decrease (dies ?c) 1) (decrease (num_dies_totals) 1))
-            
-    )
 )
