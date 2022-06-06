@@ -1,4 +1,3 @@
-
 (define (problem viatges4) 
     (:domain dominiViatges4)
     (:objects Barcelona Londres Amsterdam Paris Madrid Dubrovnik - ciutat
@@ -82,6 +81,7 @@
         
         (= (num_ciutats_visitades) 0)
         (= (num_dies_totals) 0)
+        (= (min_ciutats) 3)
         (= (min_numero_dies) 4)
         (= (min_dies_ciutat) 1)
         (= (max_dies_ciutat) 4)
@@ -92,7 +92,7 @@
         (= (interes_total) 0)
     )
 
-    (:goal (and(>= (num_ciutats_visitades) 3)
+    (:goal (and(>= (num_ciutats_visitades) (min_ciutats))
                (>= (num_dies_totals) (min_numero_dies))
                (<= (preu_total) (preu_maxim))
                (>= (preu_total) (preu_minim))
